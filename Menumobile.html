@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Menu</title>
     <style>
+        @font-face {
+            font-family: 'SuisseIntl Mono-Thin';
+            src: url('./Fonts/SuisseIntlMono-Thin.woff'); /* Asegúrate de que la ruta sea correcta */
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -13,22 +18,27 @@
             height: 100vh;
             background-color: #000;
             color: #fff;
-            font-family: 'Arial', sans-serif;
+            font-family: 'SuisseIntl Mono-Thin', sans-serif;
         }
+
         ul {
             list-style: none;
             text-align: center;
             padding: 0;
         }
+
         li {
             margin: 20px 0;
             font-size: 24px;
         }
+
         a {
-            text-decoration: none;
+            text-decoration: underline;
             color: white;
+            font-family: 'SuisseIntl Mono-Thin', sans-serif;
             transition: color 0.3s ease;
         }
+
         a:hover {
             color: gray;
         }
