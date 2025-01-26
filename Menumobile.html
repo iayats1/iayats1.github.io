@@ -13,12 +13,21 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #000;
             color: #fff;
             font-family: 'SuisseIntl Mono-Thin', sans-serif;
+        }
+
+        header {
+            position: absolute;
+            top: 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 14px; /* Ajustado al tamaño usado en la web */
         }
 
         ul {
@@ -29,7 +38,7 @@
 
         li {
             margin: 20px 0;
-            font-size: 24px;
+            font-size: 14px; /* Consistente con el resto de la web */
         }
 
         a {
@@ -45,6 +54,9 @@
     </style>
 </head>
 <body>
+    <header>
+        <p>Ignasi Ayats</p>
+    </header>
     <ul>
         <li><a href="index.html">Graphic Design</a></li>
         <li><a href="installation.html">Installation</a></li>
