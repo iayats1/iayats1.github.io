@@ -3,12 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Menu</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo styles.css para mantener los estilos -->
     <style>
-        @font-face {
-            font-family: 'SuisseIntl Mono-Thin';
-            src: url('./Fonts/SuisseIntlMono-Thin.woff'); /* Asegúrate de que la ruta sea correcta */
-        }
-
         body {
             margin: 0;
             padding: 0;
@@ -22,23 +18,44 @@
             font-family: 'SuisseIntl Mono-Thin', sans-serif;
         }
 
-        header {
-            position: absolute;
-            top: 20px;
-            text-align: center;
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            font-size: 14px; /* Ajustado al tamaño usado en la web */
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            mix-blend-mode: difference;
+        }
+
+        nav .about-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav .about-section p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        nav .close-button {
+            font-size: 14px;
+            text-decoration: underline;
+            color: white;
+            cursor: pointer;
         }
 
         ul {
             list-style: none;
             text-align: center;
             padding: 0;
+            margin-top: 50px;
         }
 
         li {
             margin: 20px 0;
-            font-size: 14px; /* Consistente con el resto de la web */
+            font-size: 14px;
         }
 
         a {
@@ -54,10 +71,15 @@
     </style>
 </head>
 <body>
- <div class="about-section">
-        <p>Ignasi Ayats</p>
-        <p>Design</p>
-    </div>
+    <nav>
+        <div class="about-section">
+            <p>Ignasi Ayats</p>
+            <p>Design</p>
+        </div>
+        <div>
+            <a href="index.html" class="close-button">Close</a>
+        </div>
+    </nav>
     <ul>
         <li><a href="index.html">Graphic Design</a></li>
         <li><a href="installation.html">Installation</a></li>
