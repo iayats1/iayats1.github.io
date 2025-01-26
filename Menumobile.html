@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- ... other head elements ... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+        li {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-  <!-- In nav.html or a separate HTML file for the mobile menu -->
-<div id="mobileMenuOverlay" class="mobile-menu-overlay">
-   <button id="closeMenuButton">&times;</button>
-   <a href="index.html" class="nav-item">Graphic Design</a>
-   <a href="installation.html" class="nav-item">Installation</a>
-   <a href="narrative.html" class="nav-item">Narrative</a>
-   <a href="contact.html" class="nav-item">Contact</a>
-</div>
-
-
-  <!-- Include the common footer here if you have one -->
-  <!-- ... -->
-  <script src="script.js"></script>
+    <ul>
+        <li><a href="index.html">Graphic Design</a></li>
+        <li><a href="installation.html">Installation</a></li>
+        <li><a href="narrative.html">Narrative</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </body>
 </html>
-
