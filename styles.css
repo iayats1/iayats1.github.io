@@ -1,5 +1,3 @@
-
-
 /* General Reset and Basic Styles */
 * {
   margin: 0;
@@ -182,10 +180,12 @@ body {
 
 .container {
   display: flex;
-  align-items: left;
+  flex-direction: column; /* Cambiado para que los elementos se apilen */
+  align-items: flex-start; /* Alineación de textos al inicio */
   width: 100%;
-  margin: 5px;
-  gap: 33%;
+  margin: 20px 0; /* Espaciado más consistente */
+  padding: 10px; /* Espaciado interno */
+  gap: 15px; /* Espaciado entre elementos dentro de la sección */
 }
 
 .bio {
@@ -216,11 +216,30 @@ body {
 
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Espaciado entre líneas del título */
+}
+
+.title p {
+  margin: 0; /* Eliminar márgenes inconsistentes */
+  font-size: 16px; /* Tamaño de fuente estándar */
+  font-weight: bold;
+}
+
 .project-title, .project-description {
   flex: 1;
   min-width: 0;
   margin-left: 0;
   padding-left: 0px;
+}
+
+.project-description {
+  font-size: 14px;
+  line-height: 1.5; /* Mejorar legibilidad */
+  text-align: justify; /* Alinear el texto justificado */
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -336,5 +355,3 @@ body {
       cursor: pointer;
   }
 }
-
-
